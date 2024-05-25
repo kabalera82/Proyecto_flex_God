@@ -1,73 +1,267 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: cinzel, bold; 
+    color: inherit;  
+    list-style: none;
+    text-decoration: none;
 }
 
-body {
-    background-color: #454545;
+body{
+    font-family: cinzel, bold;
+    background-color: #000000;
+}
+
+body > header{
+    font-family: cinzel;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+ 
+body > header > nav{
+    display : flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 2;
+}
+
+body > header > nav > ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+body > header > nav > ul > li{
+    color: white;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > header > nav > ul > li > a {
+    margin: 3vw;
+}
+
+body > header > nav > ul > li > a button.button {
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 3vw;
+    width: 10vw;
+    margin: 1vw;
+    border: solid 0.1vw black;
+    border-radius: 1vw;
+    color: white;
+    background-color: rgb(62, 139, 255);
+}
+#ArticleContenido{
+    display: flex;
+    flex-direction: wrap;
+    position: absolute;
+    margin-top: 6vw;
+    justify-content: auto;
+    color: white;
+    z-index: 2;
+    overflow: visible;
+}
+
+#LogoInicio{
+    width: 10vw;
+    height: 3vw;
+}
+
+#fundo{
     position: relative;
+    z-index: 0;
+    opacity: 0.3;
+    width: 100%;
+    height: auto;
+}
+
+#Vector{
+    height: 1vw;
+    width: 30vw;
+}
+
+#ArticleContenido > div {
+    font-size:large;
+    align-items: left;
+    margin: 2vw;
+    padding: 1vw;
+    margin-left: 7vw;
+    position: relative;
+    width: 50vw;
     z-index: 1;
 }
 
-header {
-    position: relative;
-    z-index: 2;
-    background: url('assets/fundo.png') no-repeat center center/cover;
-    width: 100%;
-    height: 885px;
+#ArticleContenido > div > h1{
+    font-size: 3vw;
+    color: white;
 }
 
-.HeaderFondo {
-    position: relative;
-    z-index: 2;
-    background: url('assets/fundo.png') no-repeat center center/cover;
-    width: 100%;
-    height: 885px; /* Ajusta esto a la altura que desees */
-    opacity: 0.8;
-    border: 50px;
+
+
+
+
+#KratosHeader{
+    position: absolute;
+    max-width: 54vw;
+    max-height: 54vw;
+    z-index: 0;
+    top: 1vw;
+    left: -26vw;
+
 }
 
-header > nav > ul {
+#video{
+    position: absolute;
+    width: 24vw;
+    height: 12vw;
+    z-index: 1;
+    top:20vw;
+    left: -6vw;
+}
+
+#CratosHeader{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+
+#CompreButton{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+}
+
+.button, .button1, .button2 {
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out; /* animación suave */
+    /* el resto de tus estilos */
+}
+
+.button:active, .button1:active, .button2:active {
+    transform: scale(0.95); /* reduce el tamaño del botón a un 95% cuando se hace clic */
+}
+.button1{
+    color: rgb(62, 139, 255);
+    background-color: white;
     align-items: center;
-    list-style: none;
-  
-}
-
-nav > ul > li > a.LogoInicio {
-    background-image: url('assets/LogoInicio.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   
-    width: 195px;
-    height: 50px;
-    opacity: 1;
-    margin-left: 20px;
-}
-
-header > nav > ul > li {
-    margin-top: 1%;
-}
-
-header > nav > ul > li > a {
-    font-size: px;
-    color: white;
+    height: 3vw;
+    width: 10vw;
+    margin: 1vw;
+    border: solid 0.1vw black;
+    border-radius: 1vw;
     text-decoration: none;
-    width: 30px;
-    height: 500px;
-}
-
-header > nav > ul > li > button {
+    justify-content: center;
+    align-items: center;
     
-    color: #000000;
-    font-size: 15px;
-    background-color: rgb(0, 140, 255);
-    border-radius: 10px;
-    padding: 20px;
-    margin-right: 20px;
 }
 
+.button2{
+    color: white;
+    background-color: rgb(62, 139, 255);
+    align-items: center;
+    height: 3vw;
+    width: 10vw;
+    margin: 1vw;
+    border: solid 0.1vw black;
+    border-radius: 1vw;
+    text-decoration: none;
+
+}       
+
+h2{
+    font-size: 2vw;
+    text-align: center;
+    color: white;
+    padding: 2%;
+}
+
+body > main > nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    top: -4vw;
+}
+
+body > main > nav > ul > li {
+    margin: 3vw;
+    position: relative; 
+    background-color: rgb(61, 61, 62);
+    width: 15vw;
+    height: 20vw;
+    top: 11vw;
+   
+    
+}
+
+
+
+#KratosMain{
+    width: 15vw;
+    height: 27vw;
+    overflow: visible;
+    bottom: 5vw;
+    margin-top: -7vw;
+    margin-bottom: 1vw;
+}
+
+#AtreusMain{
+    width: 15vw;
+    height: 27vw;
+    overflow: visible;
+    bottom: 5vw;
+    margin-top: -7vw;
+    margin-bottom: 1vw;
+}
+#FreyaMain{
+    width: 15vw;
+    height: 27vw;
+    overflow: visible;
+    bottom: 5vw;
+    margin-top: -7vw;
+    margin-bottom: 1vw;
+}
+#AngrbodaMain{
+    width: 15vw;
+    height: 27vw;
+    overflow: visible;
+    bottom: 5vw;
+    margin-top: -7vw;
+    margin-bottom: 1vw;
+}
+
+section{
+    margin-top: 3vw;
+    background:url(/assets/principal.png);
+}
+
+h3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1.5vw;
+    text-align: center;
+    color: white;
+    padding: 2%;
+    margin: 5vw;
+}
+
+#ParrafoSeccion{
+    text-align: right;
+    font-size: 1.5vw;
+    text-align: center;
+    color: white;
+    padding: 2%;
+    margin: 1vw;
+}
