@@ -34,10 +34,13 @@ body > header > nav > ul{
     padding: 0;
     justify-content: center;
 }
+.textoparrafo{
+    font-size: 1.5vw;
+}
 
 body > header > nav > ul > li{
     color: white;
-    font-size: 0.8vw;
+    font-size: 0.6555vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,14 +108,10 @@ body > header > nav > ul > li > a button.button {
     color: white;
 }
 
-
-
-
-
 #KratosHeader{
-    position: absolute;
-    max-width: 54vw;
-    max-height: 54vw;
+    position: relative;
+    width: 60vw;
+    height: 36vw;
     z-index: 0;
     top: 1vw;
     left: -26vw;
@@ -124,7 +123,7 @@ body > header > nav > ul > li > a button.button {
     width: 24vw;
     height: 12vw;
     z-index: 1;
-    top:20vw;
+    top: 20vw;
     left: -6vw;
 }
 
@@ -141,6 +140,8 @@ body > header > nav > ul > li > a button.button {
 }
 
 .button, .button1, .button2 {
+    position: relative;
+    font-size: 1vw;
     cursor: pointer;
     transition: transform 0.1s ease-in-out; /* animación suave */
     /* el resto de tus estilos */
@@ -149,6 +150,7 @@ body > header > nav > ul > li > a button.button {
 .button:active, .button1:active, .button2:active {
     transform: scale(0.95); /* reduce el tamaño del botón a un 95% cuando se hace clic */
 }
+
 .button1{
     color: rgb(62, 139, 255);
     background-color: white;
@@ -201,11 +203,10 @@ body > main > nav > ul > li {
     width: 15vw;
     height: 20vw;
     top: 11vw;
-   
-    
+      
 }
 
-
+/*
 
 #KratosMain{
     width: 15vw;
@@ -241,9 +242,19 @@ body > main > nav > ul > li {
     margin-bottom: 1vw;
 }
 
-section{
+#Seccion{
+    display: flex;
+    justify-content: space-between;
     margin-top: 3vw;
     background:url(/assets/principal.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.contenedor-imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 h3{
@@ -251,7 +262,7 @@ h3{
     flex-direction: column;
     align-items: flex-end;
     font-size: 1.5vw;
-    text-align: center;
+    text-align: right;
     color: white;
     padding: 2%;
     margin: 5vw;
@@ -265,3 +276,87 @@ h3{
     padding: 2%;
     margin: 1vw;
 }
+*/
+
+main{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+main > section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+main > section > h2{
+    font-size: 2vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-style: cinzel,bold;
+    width: 100%;
+   
+    margin-bottom: 5vw;
+}
+main > section > ul{
+    display: flex;
+    flex-direction: row;
+    margin: 1vw;
+}
+
+main > section > ul > li{
+    background-color: rgb(61, 61, 62);
+    width: 16vw;
+    height: 16.2vw;
+    position: relative;
+    margin: 2vw;
+    
+  
+}
+.KratosMain{
+    width: 16vw;
+    height: 23.2vw;    
+    bottom: 5vw;
+    margin-top: -7vw;
+    margin-bottom: 2vw;    
+}
+
+main > section > ul > li > a {
+    position: absolute;
+    z-index: 0;
+    font-size: 2vw;
+    color: white;
+    margin-top: 12vw;
+    margin-left: 5vw;
+  
+}
+main > section > div.contenedor-imagenes{
+   border: 5vw;
+   margin: 5vw;
+}
+#seccion1{
+    display: flex;
+    padding-top: 5vw;
+    
+}
+
+/* Padding: El relleno crea espacio adicional dentro de un elemento. 
+Por el contrario, margin crea espacio extra alrededor de un elemento.*/
+
+#seccion2{
+    display: flex;
+    flex-direction: row;
+    color: violet;
+  
+  
+}
+
+div.contenedor-imagenes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5vw;
+    padding: 5vw;
+}
+

@@ -9,6 +9,9 @@
     <meta name="author" content="">
     <link rel="icon" type="image/x-icon" href="assets/Vector.png" >
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -44,8 +47,8 @@
 
         <article id="ArticleContenido">
             <div id="divArticlerContenido">
-                <h1>Un Mundo mas sombrío y primitivo</h1>
-                <p>Del mármol y columnas ornamentadas del Olimpo a los bosques, este es un reino nuevo, con sus propias especies de criaturas, monstruos y dioses</p>
+                <h1>Un Mundo mas Sombrío y Primitivo</h1>
+                <p class="textoparrafo">Del mármol y columnas ornamentadas del Olimpo a los bosques, este es un reino nuevo, con sus propias especies de criaturas, monstruos y dioses</p>
                 <ul id="CompreButton">
                     <li>
                         <a href="#">
@@ -71,53 +74,60 @@
         </article>
         
     </header>
+
     <main>
-        <p>
-            <h2>Los mayores héroes de los nueve reinos</h2>
-        </p>
-        <nav>
-            <ul type="" id="personajes">
-                <li>
-                    <a href="KratosMain" class="players">
-                        <img src="assets/kratos.png" alt="Kratos" id="KratosMain">
-                    </a>
+        <section id="seccion1">
+            <h2>Los Mayores Héroes De Los Nueve Reinos</h2>
+            <ul id="heroes">
+                <li class="heroesli">
+                    <a href="#" class="players">Kratos</a>
+                    <img src="assets/kratos.png" alt="Kratos" class="KratosMain">                    
                 </li>
-                <li>
-                    <a href="AtreusMain" class="players">
-                        <img src="assets/atreus.png" alt="Atreus" id="AtreusMain">
-                    </a>
+                <li class="heroesli">
+                    <a href="#" class="players">Atreus</a>
+                    <img src="assets/atreus.png" alt="Atreus" class="KratosMain">                    
                 </li>
-                <li>
-                    <a href="Freya" class="players">
-                        <img src="assets/freya.png" alt="Freya" id="FreyaMain">
-                    </a>
-                </li>             
-                <li>
-                    <a href="Angrboda" class="players">
-                        <img src="assets/angrboda.png" alt="Angrboda" id="AngrbodaMain">
-                    </a>
-                </li>              
+                <li class="heroesli">
+                    <a href="#" class="players">Freya</a>
+                    <img src="assets/freya.png" alt="Freya" class="KratosMain">                    
+                </li>
+                <li class="heroesli">
+                    <a href="#" class="players">Angrboda</a>
+                    <img src="assets/angrboda.png" alt="Angrboda" class="KratosMain">                    
+                </li>
             </ul>
-        </nav>
-        <section id="Seccion">
-            <h3>Lucha en el reino nórdico</h3>
-            <p id="ParrafoSeccion">Con venganza contra los dioses del Olimpo en un pasado lejano, Kratos ahora vive como un mortal en el reino de los dioses y monstruos nórdicos.
+        </section>
+        <section id="seccion2">
+            <div class="contenedor-imagenes">
+                <img src="assets/01.png" alt="Kratos" id="Kratos01">               
+                <img src="assets/02.png" alt="Kratos" id="Kratos02">                
+                <img src="assets/03.png" alt="Kratos" id="Kratos03">                
+            </div>
+            <article><h3>Lucha en el reino nórdico</h3>
+                <p id="ParrafoSeccion">Con venganza contra los dioses del Olimpo en un pasado lejano, Kratos ahora vive como un mortal en el reino de los dioses y monstruos nórdicos.
                 Es en este mundo duro e implacable donde debe luchar para sobrevivir... y enseñar a su hijo a hacer lo mismo.
-            </p>
-            <ul>
-                <li>
-                    <img src="assets/01.png" alt="Kratos" id="Kratos2">
-                </li>
-                <li>
-                    <img src="assets/02.png" alt="Kratos" id="Kratos2">
-                </li>
-                <li>
-                    <img src="assets/03.png" alt="Kratos" id="Kratos2">
-                </li>
-            </ul>
+                </p>
+            </article>
+          
 
         </section>
-
+        <section id="seccion3">
+            <h4>El viaje de Kratos</h4>
+            <p>El viaje de Kratos y Atreus a través de los reinos nórdicos es una aventura brutal y emocionalmente intensa. 
+                Con nuevos peligros que acechan en cada esquina, deben enfrentarse a su pasado oscuro para forjar su futuro.
+            </p>
+            <ul>
+                <li class="seccionkratos">
+                    <img src="assets/04.png" alt="Kratos" id="Kratos2">
+                </li>
+                <li class="seccionkratos">
+                    <img src="assets/05.png" alt="Kratos" id="Kratos2">
+                </li>
+                <li>
+                    
+                </li>
+            </ul>
+        </section>
     </main>
     <footer>
         <p>Proyecto Flex God Of War</p>
