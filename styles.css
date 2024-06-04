@@ -143,12 +143,12 @@ body > header > nav > ul > li > a button.button {
     position: relative;
     font-size: 1vw;
     cursor: pointer;
-    transition: transform 0.1s ease-in-out; /* animación suave */
-    /* el resto de tus estilos */
+    transition: transform 0.1s ease-in-out; 
+    
 }
 
 .button:active, .button1:active, .button2:active {
-    transform: scale(0.95); /* reduce el tamaño del botón a un 95% cuando se hace clic */
+    transform: scale(0.95); 
 }
 
 .button1{
@@ -333,6 +333,11 @@ h5{
     flex-direction: row;
 
 }
+#articulo4{
+    font-size: 1vw;
+    display: flex;
+    flex-direction: row;
+}
 
 .listaarmas{
     margin-top: 5vw;
@@ -354,3 +359,123 @@ h5{
     width: 16vw;
     height: 24vw;
 }
+
+
+@media (max-width: 600px) {
+  #divArticlerContenido{
+    display: none;
+    }
+
+    #nav_principal {
+        display: block;
+        display: flex;
+        flex-direction: column;       
+    
+        li {
+            font-size: 2vw;
+        }
+
+    }
+    #LogoInicio {
+        width: 30vw; 
+        height: auto; 
+      }
+    #Vector {
+        display: none;
+    }
+    #boton {
+        font-size: 1.5vw;
+        width: 15vw;
+        height: 5vw;
+    }
+    #CratosHeader {
+        display: block;        
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        left: 260px;
+    }
+    #video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: -55px; 
+        margin-right: 25px;
+    }
+    #seccion2 {
+        display: flex;
+        flex-direction: column-reverse; 
+        justify-content: center; 
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        background-image: url('assets/principal.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 65vw 40vw;
+        background-position-x: 15vw;
+        background-position-y: 15vw;
+        position: relative;
+        height: 100vw;
+    }
+    .div_2_1 {
+        margin-top: 30vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        margin-bottom: 40vw;
+        margin-left: -10vw;
+   
+    }
+    .div_2_1 img {
+        width: auto; 
+        height: 12vw; 
+        justify-content: center; 
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .div_2_2 {
+        margin-top: 10vw;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5vw;
+        align-items: center;
+        padding-left: 0vw;
+        padding-right: 0vw;
+        font-size: 2.2vw; 
+        
+    }
+    #armaslegendarias {
+        display: flex;
+        flex-direction: column;
+        font-size: 2vw;
+        width: auto;
+        height: 200vw;
+    }
+    body {
+        overflow-x: hidden; 
+    }
+    
+    body #seccion3 {
+        margin-top: -80vw;
+        align-items: center;
+        display: flex; 
+        flex-direction: column; 
+      
+        
+    }
+    
+    .listaarmas{
+        font-size: 1.8vw;
+        display: flex;
+        flex-direction: column; 
+    }
+ }
+  
